@@ -1,5 +1,6 @@
 import Head from "next/head";
 import SearchBox from "../components/searchbox";
+import { magic } from "../lib/magic-client";
 
 export default function Home() {
   return (
