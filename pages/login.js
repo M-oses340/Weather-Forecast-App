@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../styles/Login.module.css";
 import { magic } from "../lib/magic-client";
-
+import Head from "next/head";
 import { useState, useEffect } from "react";
 
 
@@ -82,14 +82,14 @@ const Login = () => {
       </Head>
       <header className={styles.header}>
         <div className={styles.headerWrapper}>
-          <Link className={styles.logoLink} href="/">
+          <Link className={styles.logoLink} href="/" legacyBehavior>
             <a>
               <div className={styles.logoWrapper}>
                 <Image
                   src="/static/netflix.svg"
                   alt="Weather Forecast logo"
-                  width="128px"
-                  height="34px"
+                  width="128"
+                  height="34"
                 />
               </div>
             </a>
